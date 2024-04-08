@@ -1,7 +1,7 @@
 function createMessage(person) {
     var name = person.name;
     var age = person.age;
-    var city;
+    var city = "world";
 
     if (typeof person.city === "undefined") {
         city = person.city;
@@ -18,4 +18,8 @@ var people = [{ name: 'John Doe', age: 30, city: 'Los Angeles' }, { name: 'Jane 
 var messages = [];
 for (var i = 0; i < people.length; i++) {
     messages.push(createMessage(people[i]));
+}
+
+for (var j = 0; j < messages.length; j++){
+    console.log(messages[j])
 }
