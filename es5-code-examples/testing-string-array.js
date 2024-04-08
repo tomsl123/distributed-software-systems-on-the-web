@@ -1,7 +1,5 @@
-// Array of fruits
 var fruits = ['apple', 'banana', 'cherry'];
 
-// Checking if the array includes 'banana' using for loop
 var includesBanana = false;
 for (var i = 0; i < fruits.length; i++) {
     if (fruits[i] === 'banana') {
@@ -10,9 +8,8 @@ for (var i = 0; i < fruits.length; i++) {
     }
 }
 
-console.log('Includes banana:', includesBanana); // Output: Includes banana: true
+console.log('Includes banana:', includesBanana);
 
-// Checking if every fruit has more than 5 characters using for loop
 var everyFruitHasMoreThanFiveChars = true;
 for (var i = 0; i < fruits.length; i++) {
     if (fruits[i].length <= 5) {
@@ -21,9 +18,8 @@ for (var i = 0; i < fruits.length; i++) {
     }
 }
 
-console.log('Every fruit has more than five characters:', everyFruitHasMoreThanFiveChars); // Output: false
+console.log('Every fruit has more than five characters:', everyFruitHasMoreThanFiveChars);
 
-// Checking if some fruits have more than 5 characters using for loop
 var someFruitsHaveMoreThanFiveChars = false;
 for (var i = 0; i < fruits.length; i++) {
     if (fruits[i].length > 5) {
@@ -32,4 +28,4 @@ for (var i = 0; i < fruits.length; i++) {
     }
 }
 
-console.log('Some fruits have more than five characters:', someFruitsHaveMoreThanFiveChars); // Output: true
+console.log('Some fruits have more than five characters:', someFruitsHaveMoreThanFiveChars);
