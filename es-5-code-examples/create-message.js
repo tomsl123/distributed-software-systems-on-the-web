@@ -1,7 +1,11 @@
 function createMessage(person) {
     var name = person.name;
     var age = person.age;
-    var city = person.city || 'New York';
+    var city;
+
+    if (typeof person.city === "undefined") {
+        city = person.city;
+    }
 
     if (name.indexOf('John') === 0 && name.indexOf('Doe') === name.length - 3) {
         return 'Hello, ' + name + '! Your age is ' + age + ' and you live in ' + city + '.';
