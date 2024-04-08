@@ -1,5 +1,8 @@
 function concatenateStrings(strings, delimiter) {
-    delimiter = delimiter || ', '; // Fallback to default delimiter
+    if (typeof delimiter === 'undefined') {
+        delimiter = ', ';
+    }
+
     var result = '';
 
     for (var i = 0; i < strings.length; i++) {
