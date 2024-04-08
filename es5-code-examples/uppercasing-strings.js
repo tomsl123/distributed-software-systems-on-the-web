@@ -6,7 +6,7 @@ for (var i = 0; i < fruits.length; i++) {
 }
 
 for (var j = 0; j < fruits.length; j++) {
-    console.log('Fruit: ' + fruits[i]);
+    console.log('Fruit: ' + fruits[j]);
 }
 
 console.log(uppercaseFruits);
